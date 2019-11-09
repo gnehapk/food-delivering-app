@@ -1,0 +1,23 @@
+@import '../../color-variables.scss';
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 4rem;
+  justify-content: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.restaurant-count {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+    margin: 2rem 0 0 20rem;
+    color: $color-dark-grey;
+  }
+}

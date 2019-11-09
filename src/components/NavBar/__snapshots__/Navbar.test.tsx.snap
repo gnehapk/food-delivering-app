@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar should render correctly 1`] = `
+<div
+  className="nav-bar"
+>
+  <img
+    alt="logo"
+    src="logo-horizontal.svg"
+  />
+  <div
+    className="user-section"
+  >
+    <img
+      alt="username"
+      src="user-icon.svg"
+    />
+    <span
+      className="username"
+    >
+      Jane Smith
+    </span>
+  </div>
+</div>
+`;

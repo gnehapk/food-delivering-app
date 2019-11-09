@@ -1,44 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Food Devlivering app
+
+## Folder Structure
+
+```
+food-delivering-app/
+  README.md
+  package.json - manges dependencies
+  public/
+    index.html
+  src/
+    assets - store all images and json used across the application
+    components -  stores the app components
+      App - Wrapper for the app
+      Header - Stateless component to show the Header of the app i.e location and "change location" button
+      NavBar: Stateless component to show navigation bar
+      Restaurant: Stateless component to show details of each restuarant
+      RestaurantImg: Stateless component to show restaurant image
+      RestaurantDetails: Stateless component to show details of each restaurant
+      RestaurantTags: Stateless component to show tags associated with each restaurant
+      RestaurantListBuilder: Stateful component to build the restaurant list builder
+    index.js: javascript entry point
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser(It will automtically opens the window in browser).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The page will reload automatically, if you do any modifications. Watchers has been added.<br>
 
-### `yarn test`
+### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs test tasks in the interactive watch mode.<br>
+Added snapshot testing for all the components
 
-### `yarn build`
+### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
+Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
+The build is minified, unglified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to run the app -
 
-### `yarn eject`
+### In development mode -
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - Unzip the food-delivering-app.zip
+    - Go to `food-delivering-app` folder
+    - Run `npm install`
+    - Run 'npm start`, which will show the url(generally its `http://localhost:3000/`) in the logs
+    - Open the url in the browser(generally - http://localhost:3000/)
+    - Now you should see the application running
+    - It will also add the watchers, which will automatically reflect the code changes in the browser
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###  In production mode -
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    - Unzip the food-delivering-app.zip
+    - Go to `food-delivering-app` folder
+    - Run `npm install`
+    - Run 'npm run build`, it will minify and obfuscate the code for production environment.
+    - It will create a `build` folder.
+    - If you want to run the app, go to the build folder
+    -  You can run any server here - for eg. http-server(you have to install the server, if not already installed - sudo npm install http-server -g, and then run `http-server` command)
+    - Type the url exposed by the server in the browser
+    - Now you can see the application running
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## My approach - 
+ 
+   - Created a SPA using ReactJS library.
+   - Modularized the views based on their responsibility
+   - Build a responsive web application
+   - Written snapshot tests for all the components which can be seen by running npm run test or npm test.
+   - Added TypeScript
+      
+## Technology Stack Used -
+  - ReactJS
+  - JavaScript - ES6 
+  - HTML
+  - SCSS
+  - TypeScript
+  - Webpack - for module bundling
+  - Babel - for converting ES6 code to browser supported code
+  - npm - package manager
+  - jest - test runner
+  - react-test-renderer - reactjs inbuilt testing support

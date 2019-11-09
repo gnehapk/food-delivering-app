@@ -1,0 +1,20 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 4rem;
+
+  .user-section {
+    padding-top: 1.2rem;
+    .username {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        display: inline;
+        vertical-align: middle;
+        padding-left: 0.4rem;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantListBuilder should render correctly 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <div>
+      <p
+        className="location-text"
+      >
+        Location
+      </p>
+      <p
+        className="location-name"
+      >
+        
+      </p>
+    </div>
+    <div>
+      <button
+        className="location-btn btn btn-light"
+        disabled={false}
+        type="button"
+      >
+        Change Location
+      </button>
+    </div>
+  </div>
+  <div>
+    <div
+      className="restaurant-count"
+    >
+      0
+       Restaurants
+    </div>
+    <div
+      className="restaurant-list"
+    />
+  </div>
+</div>
+`;

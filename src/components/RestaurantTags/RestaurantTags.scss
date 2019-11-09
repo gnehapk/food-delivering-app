@@ -1,0 +1,9 @@
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .tag::after {
+    content: "•";
+    padding: 0.5rem;
+  }
+}

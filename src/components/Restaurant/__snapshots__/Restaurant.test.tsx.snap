@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Restuarant should render correctly 1`] = `
+<div
+  className="restaurant"
+>
+  <img
+    alt="RestaurantImg"
+    src="http://kitchen.png"
+  />
+  <div>
+    <div
+      className="restuarant-name"
+    >
+      Kitchen
+    </div>
+    <div
+      className="tags"
+    >
+      <div
+        className="tag-list"
+      >
+        <div
+          className="tag"
+        >
+           
+          tag1
+        </div>
+        <div
+          className="tag"
+        >
+           
+          tag2
+        </div>
+      </div>
+      <div>
+        £ 
+        100
+      </div>
+    </div>
+  </div>
+</div>
+`;

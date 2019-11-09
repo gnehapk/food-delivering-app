@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantTags should render correctly 1`] = `
+<div
+  className="tag-list"
+>
+  <div
+    className="tag"
+  >
+     
+    tag1
+  </div>
+  <div
+    className="tag"
+  >
+     
+    tag2
+  </div>
+</div>
+`;

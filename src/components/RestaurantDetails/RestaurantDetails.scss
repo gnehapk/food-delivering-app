@@ -1,0 +1,11 @@
+@import '../../color-variables.scss';
+
+.restuarant-name {
+  font-weight: bold;
+  margin-top: 0.7rem;
+}
+
+.tags {
+  display: flex;
+  color: $color-dark-grey;
+}
